@@ -1,5 +1,5 @@
-var webpack = require('webpack');
-var path = require('path');
+var webpack = require('webpack')
+var path = require('path')
 
 module.exports = {
 
@@ -10,15 +10,16 @@ module.exports = {
         filename: 'build/bundle.js',
         sourceMapFilename: 'build/bundle.map'
     },
-    devtool: '#sourc-map',
+    devtool: '#source-map',
     module: {
       loaders: [
         {
-          test: /\.js$/,
-          exlcude:/node_modules/,
-          loaders: [
-            'babel-loader?experimental&optional=selfContained'
-          ]
+          test: /\.jsx?$/,
+          exclude: /(node_modules)/,
+          loader: 'babel',
+          query: {
+              presets: ['react', 'es2015']
+          }
         }
       ]
     }
