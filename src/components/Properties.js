@@ -7,10 +7,10 @@ export default class Properties extends Component {
 
   componentWillMount() {}
   componentDidMount() {}
-  componentReceiveProps() {}
-  shouldWilllUpdate() {}
-  componentUpdate() {}
+  componentWillReceiveProps() {}
+  shouldComponentUpdate() {}
   componentWillUpdate() {}
+  componentDidUpdate() {}
   componentUnmount() {}
 
   render() {
