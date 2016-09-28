@@ -5,6 +5,14 @@ export default class Properties extends Component {
     super(props);
   }
 
+  componentWillMount() {}
+  componentDidMount() {}
+  componentReceiveProps() {}
+  shouldWilllUpdate() {}
+  componentUpdate() {}
+  componentWillUpdate() {}
+  componentUnmount() {}
+
   render() {
     return(
       <div className='text-center'>
