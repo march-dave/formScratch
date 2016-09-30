@@ -9,10 +9,10 @@ class App extends Component {
     return(
       <div>
           This is the React App
-          <Contact title={this.props.headerTitle}/>
+          <Contact title={this.props.headerTitle} myname={this.props.firstName} />
       </div>
     );
   }
 }
 
-ReactDOM.render(<App headerTitle="Ha Ha Ha"/>, document.getElementById('app'))
+ReactDOM.render(<App headerTitle="Ha Ha Ha" firstName="Dave"/>, document.getElementById('app'))

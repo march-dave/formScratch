@@ -11,6 +11,7 @@ class Contact extends Component {
       <div>
           Hello Contact!!
           <h2>{this.props.title}</h2>
+          <div>{this.props.myname}</div>
       </div>
     );
   }

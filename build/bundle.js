@@ -88,7 +88,7 @@
 	        'div',
 	        null,
 	        'This is the React App',
-	        _react2.default.createElement(_Contact2.default, { title: this.props.headerTitle })
+	        _react2.default.createElement(_Contact2.default, { title: this.props.headerTitle, myname: this.props.firstName })
 	      );
 	    }
 	  }]);
@@ -96,7 +96,7 @@
 	  return App;
 	}(_react.Component);
 	
-	_reactDom2.default.render(_react2.default.createElement(App, { headerTitle: 'Ha Ha Ha' }), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(App, { headerTitle: 'Ha Ha Ha', firstName: 'Dave' }), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -21508,6 +21508,12 @@
 	          'h2',
 	          null,
 	          this.props.title
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          this.props.myname,
+	          ' '
 	        )
 	      );
 	    }
