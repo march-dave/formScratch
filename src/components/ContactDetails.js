@@ -6,6 +6,11 @@ export default class ContactDetails extends React.Component {
   }
 
   render() {
-    return (<div>ContactDetails</div>);
+    return (
+      <div>
+        Contact Detail Component
+        <h1>{this.props.address}</h1>
+      </div>
+    );
   }
 }

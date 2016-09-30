@@ -75,20 +75,49 @@
 	var App = function (_Component) {
 	  _inherits(App, _Component);
 	
-	  function App() {
+	  function App(props) {
 	    _classCallCheck(this, App);
 	
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+	
+	    _this.state = {
+	      value: 0
+	    };
+	
+	    _this.updateButton = _this.updateButton.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(App, [{
+	    key: 'updateButton',
+	    value: function updateButton() {
+	      // this.props.onUpdate();
+	      // console.log('update', props);
+	
+	      // this.setState({
+	      //   value: this.state.value + 1;
+	      // })
+	      console.log('updateButton: ' + this.setState.value);
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	
+	      this.setState = {
+	        name: "call me dave"
+	      };
+	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
+	        _react2.default.createElement(_ContactDetails2.default, { address: this.props.addressDisplay }),
 	        'This is the React App',
-	        _react2.default.createElement(_Contact2.default, { title: this.props.headerTitle, myname: this.props.firstName })
+	        _react2.default.createElement(_Contact2.default, { title: this.props.headerTitle, myname: this.props.firstName }),
+	        _react2.default.createElement(
+	          'button',
+	          { onClick: this.updateButton },
+	          'On Click Button'
+	        )
 	      );
 	    }
 	  }]);
@@ -96,7 +125,7 @@
 	  return App;
 	}(_react.Component);
 	
-	_reactDom2.default.render(_react2.default.createElement(App, { headerTitle: 'Ha Ha Ha', firstName: 'Dave' }), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(App, { headerTitle: 'Ha Ha Ha', firstName: 'Dave', addressDisplay: 'New York' }), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -21512,8 +21541,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          this.props.myname,
-	          ' '
+	          this.props.myname
 	        )
 	      );
 	    }
@@ -21563,7 +21591,12 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'ContactDetails'
+	        'Contact Detail Component',
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          this.props.address
+	        )
 	      );
 	    }
 	  }]);
