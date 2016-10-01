@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default class ContactDetails extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class ContactDetails extends React.Component {
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (
@@ -14,3 +14,5 @@ export default class ContactDetails extends React.Component {
     );
   }
 }
+
+export default ContactDetails;

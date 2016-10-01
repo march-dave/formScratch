@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      value: 0
+      "addressDisplay": "New York"
     }
 
     this.updateButton = this.updateButton.bind(this);
@@ -19,11 +19,11 @@ class App extends Component {
     // this.props.onUpdate();
     // console.log('update', props);
 
-    // this.setState({
-    //   value: this.state.value + 1;
-    // })
+    this.setState({
+      addressDisplay: "Toronto"
+    })
 
-    console.log('updateButton: ' + this.state.value);
+    // console.log('updateButton: ' + this.state.value);
 
   }
 
@@ -35,7 +35,7 @@ class App extends Component {
 
     return(
       <div>
-          <ContactDetails address={this.props.addressDisplay} />
+          <ContactDetails address={this.addressDisplay} />
           This is the React App
           <Contact title={this.props.headerTitle} myname={this.props.firstName} />
 
@@ -46,4 +46,4 @@ class App extends Component {
   }
 }
 
-ReactDOM.render(<App headerTitle="Ha Ha Ha" firstName="Dave" addressDisplay="New York"/>, document.getElementById('app'))
+ReactDOM.render(<App headerTitle="Ha Ha Ha" firstName="Dave" />, document.getElementById('app'))
