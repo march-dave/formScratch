@@ -75,40 +75,21 @@
 	var App = function (_Component) {
 	  _inherits(App, _Component);
 	
-	  function App(props) {
+	  function App() {
 	    _classCallCheck(this, App);
 	
-	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-	
-	    _this.state = {
-	      "addressDisplay": "New York"
-	    };
-	    _this.updateButton = _this.updateButton.bind(_this);
-	    return _this;
+	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
 	  }
 	
 	  _createClass(App, [{
-	    key: 'updateButton',
-	    value: function updateButton() {
-	      this.setState({
-	        addressDisplay: "Toronto"
-	      });
-	      console.log('addressDisplay', this.setState.addressDisplay);
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_ContactDetails2.default, { address: this.addressDisplay }),
+	        _react2.default.createElement(_ContactDetails2.default, null),
 	        'This is the React App',
-	        _react2.default.createElement(_Contact2.default, { title: this.props.headerTitle, myname: this.props.firstName }),
-	        _react2.default.createElement(
-	          'button',
-	          { onClick: this.updateButton },
-	          'On Click Button'
-	        )
+	        _react2.default.createElement(_Contact2.default, { title: this.props.headerTitle, myname: this.props.firstName })
 	      );
 	    }
 	  }]);
@@ -21547,7 +21528,7 @@
 /* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -21570,28 +21551,42 @@
 	var ContactDetails = function (_React$Component) {
 	  _inherits(ContactDetails, _React$Component);
 	
-	  function ContactDetails() {
+	  function ContactDetails(props) {
 	    _classCallCheck(this, ContactDetails);
 	
-	    return _possibleConstructorReturn(this, (ContactDetails.__proto__ || Object.getPrototypeOf(ContactDetails)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (ContactDetails.__proto__ || Object.getPrototypeOf(ContactDetails)).call(this, props));
+	
+	    _this.state = {
+	      address: "New York22"
+	    };
+	
+	    _this.addressUpdate = _this.addressUpdate.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(ContactDetails, [{
-	    key: 'render',
-	
-	    // constructor(props) {
-	    //   super(props);
-	    // }
-	
+	    key: "addressUpdate",
+	    value: function addressUpdate() {
+	      this.setState({
+	        address: "NJ"
+	      });
+	    }
+	  }, {
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        "div",
 	        null,
-	        'Contact Detail Component',
 	        _react2.default.createElement(
-	          'h1',
+	          "h1",
 	          null,
-	          this.props.address
+	          this.state.address,
+	          ": hhh"
+	        ),
+	        _react2.default.createElement(
+	          "button",
+	          { onClick: this.addressUpdate },
+	          "Address Click"
 	        )
 	      );
 	    }
