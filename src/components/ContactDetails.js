@@ -9,7 +9,7 @@ class ContactDetails extends React.Component {
     return (
       <div>
         Contact Detail Component
-        <h1>{this.props.address}</h1>
+        <h1>{this.state.address}</h1>
       </div>
     );
   }
