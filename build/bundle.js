@@ -83,7 +83,6 @@
 	    _this.state = {
 	      "addressDisplay": "New York"
 	    };
-	
 	    _this.updateButton = _this.updateButton.bind(_this);
 	    return _this;
 	  }
@@ -91,23 +90,14 @@
 	  _createClass(App, [{
 	    key: 'updateButton',
 	    value: function updateButton() {
-	      // this.props.onUpdate();
-	      // console.log('update', props);
-	
 	      this.setState({
 	        addressDisplay: "Toronto"
 	      });
-	
-	      // console.log('updateButton: ' + this.state.value);
+	      console.log('addressDisplay', this.setState.addressDisplay);
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	
-	      this.setState = {
-	        name: "call me dave"
-	      };
-	
 	      return _react2.default.createElement(
 	        'div',
 	        null,

@@ -11,36 +11,23 @@ class App extends Component {
     this.state = {
       "addressDisplay": "New York"
     }
-
     this.updateButton = this.updateButton.bind(this);
   }
 
   updateButton() {
-    // this.props.onUpdate();
-    // console.log('update', props);
-
     this.setState({
       addressDisplay: "Toronto"
     })
-
-    // console.log('updateButton: ' + this.state.value);
-
+    console.log('addressDisplay', this.setState.addressDisplay);
   }
 
   render() {
-
-    this.setState = ({
-      name: "call me dave"
-    })
-
     return(
       <div>
           <ContactDetails address={this.addressDisplay} />
           This is the React App
           <Contact title={this.props.headerTitle} myname={this.props.firstName} />
-
           <button onClick={this.updateButton}>On Click Button</button>
-
       </div>
     );
   }
