@@ -20,7 +20,6 @@ class ContactDetails extends React.Component {
   render() {
     return (
       <div>
-
         <h1>{this.state.address}: hhh</h1>
         <button onClick={this.addressUpdate}>Address Click</button>
       </div>
