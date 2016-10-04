@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import Contact from './components/Contact'
 import ContactDetails from './components/ContactDetails'
 
+import Counter from './components/Counter'
+
 class App extends Component {
 
   render() {
@@ -11,6 +13,8 @@ class App extends Component {
           <ContactDetails />
           This is the React App
           <Contact title={this.props.headerTitle} myname={this.props.firstName} />
+
+          <Counter />
       </div>
     );
   }
