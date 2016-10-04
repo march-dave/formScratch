@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import Contact from './components/Contact'
 import ContactDetails from './components/ContactDetails'
 
-import Counter from './components/Counter'
+// import Counter from './components/Counter'
 
 class App extends Component {
 
@@ -14,7 +14,7 @@ class App extends Component {
           This is the React App
           <Contact title={this.props.headerTitle} myname={this.props.firstName} />
 
-          <Counter />
+        
       </div>
     );
   }
