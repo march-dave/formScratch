@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { addTodo } from './actions/actions'
+
 import ReactDOM from 'react-dom'
 import Contact from './components/Contact'
 import ContactDetails from './components/ContactDetails'
