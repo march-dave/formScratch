@@ -28,3 +28,14 @@ render (
 
     rootElement
 )
+
+ReactDOM.render({
+  <Router histroy={browserHistory}>
+    <Router path="/" component={App}>
+      <IndexRoute component={Home} />
+      <Route paht="home" component={Home} />
+      <Route path="abput" component={About} />
+      <Route path="contact" component={Contact} />
+    </Router>
+  </Router>
+})
