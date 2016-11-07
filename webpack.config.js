@@ -4,12 +4,18 @@ var path = require('path')
 module.exports = {
 
     entry: {
-        app: './src/app.js'
+        app: './src/index.js'
     },
     output: {
         filename: 'build/bundle.js',
         sourceMapFilename: 'build/bundle.map'
     },
+
+    devServer: {
+        inline: true,
+        port: 3000
+    },
+
     devtool: '#source-map',
     module: {
       loaders: [
@@ -23,6 +29,6 @@ module.exports = {
         }
       ]
     }
-
-
 }
+
+// module.exports = config;
