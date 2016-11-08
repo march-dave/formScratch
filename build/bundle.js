@@ -60,8 +60,6 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// import App from './components/app';
-	
 	_reactDom2.default.render(_react2.default.createElement(_app2.default, null), content);
 
 /***/ },
@@ -21466,11 +21464,7 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        'Hello World!!'
-	      );
+	      return _react2.default.createElement('div', null);
 	    }
 	  }]);
 	
