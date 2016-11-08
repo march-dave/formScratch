@@ -62,7 +62,7 @@
 	
 	// import App from './components/app';
 	
-	_reactDom2.default.render(_react2.default.createElement(_app2.default, null), app);
+	_reactDom2.default.render(_react2.default.createElement(_app2.default, null), content);
 
 /***/ },
 /* 1 */
@@ -21478,72 +21478,6 @@
 	}(_react2.default.Component);
 	
 	exports.default = App;
-	
-	// class Header extends React.Component {
-	//   render() {
-	//     return (
-	//       <div>
-	//         <h1>Header</h1>
-	//       </div>
-	//     );
-	//   }
-	// }
-	//
-	// class Content extends React.Component {
-	//   render() {
-	//     return (
-	//       <div>
-	//         <h1>Content</h1>
-	//       </div>
-	//     )
-	//   }
-	// }
-	
-	
-	// import React, { Component } from 'react'
-	// import { connect } from 'react-redux'
-	// import { addTodo } from './actions/actions'
-	//
-	// import ReactDOM from 'react-dom'
-	// import Contact from './components/Contact'
-	// import ContactDetails from './components/ContactDetails'
-	//
-	// import AddTodo from './components/AddTodo'
-	// import TodoList from './components/TodoList'
-	//
-	// // import Counter from './components/Counter'
-	//
-	// class App extends Component {
-	//
-	//   render() {
-	//     const { dispatch, visibleTodos } = this.props
-	//
-	//     return(
-	//       <div>
-	//
-	//           <AddTodo
-	//             onAddClick = {text =>
-	//             dispatch(addTodo(text))}
-	//             />
-	//           <TodoList todos = {visibleTodos} />
-	//           <ContactDetails />
-	//           This is the React App
-	//           <Contact title={this.props.headerTitle} myname={this.props.firstName} />
-	//
-	//
-	//       </div>
-	//     );
-	//   }
-	// }
-	//
-	// function select(state) {
-	//   return (
-	//     visibleTodos: state.todos
-	//   )
-	// }
-	// export default connect(select)(App)
-	//
-	// ReactDOM.render(<App headerTitle="Ha Ha Ha" firstName="Dave" />, document.getElementById('app'))
 
 /***/ }
 /******/ ]);
