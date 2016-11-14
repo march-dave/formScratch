@@ -10,7 +10,7 @@ class Todos extends Component {
   render() {
     return (
       <form>
-          <div>
+          <div className="container-fluid">
               <label>First Name</label> <input text='firstName' />
             </div>
             <div>

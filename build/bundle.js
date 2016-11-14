@@ -21525,7 +21525,7 @@
 	        null,
 	        _react2.default.createElement(
 	          'div',
-	          null,
+	          { className: 'container-fluid' },
 	          _react2.default.createElement(
 	            'label',
 	            null,
