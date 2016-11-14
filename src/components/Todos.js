@@ -1,28 +1,27 @@
 import React, { Component } from 'react'
-import TodoList from './TodoList'
 
-export default class Todos extends Component {
+class Todos extends Component {
 
-  constructor(props) {
+  constructor(props, context) {
     super(props);
     this.state = { itmes:[], text: ''}
   }
 
-
   render() {
     return (
-      <div>
-
-        <TodoList itmes={this.state.items}/>
-
-        <form>
-
-        <input />
-        <button />
-
-        </form>
-
-      </div>
+      <form>
+          <div>
+              <label>First Name</label> <input text='firstName' />
+            </div>
+            <div>
+              <label>Last Name</label> <input text='lasttName' />
+            </div>
+            <div>
+              <label>Age</label> <input text='ageName' />
+            </div>
+      </form>
     )
   }
 }
+
+export default Todos;
