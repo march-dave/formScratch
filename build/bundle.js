@@ -21508,12 +21508,12 @@
 	var Todos = function (_Component) {
 	  _inherits(Todos, _Component);
 	
-	  function Todos(props, context) {
+	  function Todos(props) {
 	    _classCallCheck(this, Todos);
 	
 	    var _this = _possibleConstructorReturn(this, (Todos.__proto__ || Object.getPrototypeOf(Todos)).call(this, props));
 	
-	    _this.state = { itmes: [], text: '' };
+	    _this.state = { itmes: [], firstname: '', lastname: '', age: '' };
 	    return _this;
 	  }
 	
@@ -21522,7 +21522,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'form',
-	        null,
+	        { onClick: '' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'container-fluid' },
@@ -21532,7 +21532,7 @@
 	            'First Name'
 	          ),
 	          ' ',
-	          _react2.default.createElement('input', { text: 'firstName' })
+	          _react2.default.createElement('input', { value: this.state.firstname })
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -21543,7 +21543,7 @@
 	            'Last Name'
 	          ),
 	          ' ',
-	          _react2.default.createElement('input', { text: 'lasttName' })
+	          _react2.default.createElement('input', { value: this.state.lastname })
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -21554,7 +21554,7 @@
 	            'Age'
 	          ),
 	          ' ',
-	          _react2.default.createElement('input', { text: 'ageName' })
+	          _react2.default.createElement('input', { value: this.state.age })
 	        )
 	      );
 	    }

@@ -2,22 +2,22 @@ import React, { Component } from 'react'
 
 class Todos extends Component {
 
-  constructor(props, context) {
+  constructor(props) {
     super(props);
-    this.state = { itmes:[], text: ''}
+    this.state = { itmes:[], firstname:'', lastname:'', age:'' }
   }
 
   render() {
     return (
-      <form>
+      <form onClick="">
           <div className="container-fluid">
-              <label>First Name</label> <input text='firstName' />
+              <label>First Name</label> <input value={this.state.firstname} />
             </div>
             <div>
-              <label>Last Name</label> <input text='lasttName' />
+              <label>Last Name</label> <input value={this.state.lastname} />
             </div>
             <div>
-              <label>Age</label> <input text='ageName' />
+              <label>Age</label> <input value={this.state.age} />
             </div>
       </form>
     )
