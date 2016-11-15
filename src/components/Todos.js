@@ -4,12 +4,12 @@ class Todos extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { itmes:[], firstname:'', lastname:'', age:'' }
+    this.state = { firstname:'', lastname:'', age:'' }
   }
 
   render() {
     return (
-      <form onClick="">
+      <form onSubmit="">
           <div className="container-fluid">
               <label>First Name</label> <input value={this.state.firstname} />
             </div>
@@ -19,6 +19,7 @@ class Todos extends Component {
             <div>
               <label>Age</label> <input value={this.state.age} />
             </div>
+            <button>Click</button>
       </form>
     )
   }

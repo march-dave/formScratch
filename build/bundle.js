@@ -21513,7 +21513,7 @@
 	
 	    var _this = _possibleConstructorReturn(this, (Todos.__proto__ || Object.getPrototypeOf(Todos)).call(this, props));
 	
-	    _this.state = { itmes: [], firstname: '', lastname: '', age: '' };
+	    _this.state = { firstname: '', lastname: '', age: '' };
 	    return _this;
 	  }
 	
@@ -21522,7 +21522,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'form',
-	        { onClick: '' },
+	        { onSubmit: '' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'container-fluid' },
@@ -21555,6 +21555,11 @@
 	          ),
 	          ' ',
 	          _react2.default.createElement('input', { value: this.state.age })
+	        ),
+	        _react2.default.createElement(
+	          'button',
+	          null,
+	          'Click'
 	        )
 	      );
 	    }
