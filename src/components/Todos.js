@@ -7,11 +7,15 @@ class Todos extends Component {
     this.state = { firstname:'', lastname:'', age:'' }
   }
 
+  handleFirstNameChange(e) {
+    console.log('handleFirstNameChange', e.target);
+  }
+
   render() {
     return (
-      <form onSubmit="">
+      <form>
           <div className="container-fluid">
-              <label>First Name</label> <input value={this.state.firstname} />
+              <label>First Name</label> <input onChange={this.handleFirstNameChange} value={this.state.firstname} />
             </div>
             <div>
               <label>Last Name</label> <input value={this.state.lastname} />

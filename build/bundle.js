@@ -21518,11 +21518,16 @@
 	  }
 	
 	  _createClass(Todos, [{
+	    key: 'handleFirstNameChange',
+	    value: function handleFirstNameChange(e) {
+	      console.log('handleFirstNameChange', e.target);
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'form',
-	        { onSubmit: '' },
+	        null,
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'container-fluid' },
@@ -21532,7 +21537,7 @@
 	            'First Name'
 	          ),
 	          ' ',
-	          _react2.default.createElement('input', { value: this.state.firstname })
+	          _react2.default.createElement('input', { onChange: this.handleFirstNameChange, value: this.state.firstname })
 	        ),
 	        _react2.default.createElement(
 	          'div',
