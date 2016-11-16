@@ -21514,6 +21514,7 @@
 	    var _this = _possibleConstructorReturn(this, (Todos.__proto__ || Object.getPrototypeOf(Todos)).call(this, props));
 	
 	    _this.state = { firstname: '', lastname: '', age: '' };
+	    _this.handleFirstNameChange = _this.handleFirstNameChange.bind(_this);
 	    return _this;
 	  }
 	
@@ -21521,6 +21522,7 @@
 	    key: 'handleFirstNameChange',
 	    value: function handleFirstNameChange(e) {
 	      console.log('handleFirstNameChange', e.target);
+	      this.setState({ firstname: e.target.value });
 	    }
 	  }, {
 	    key: 'render',
@@ -21536,7 +21538,6 @@
 	            null,
 	            'First Name'
 	          ),
-	          ' ',
 	          _react2.default.createElement('input', { onChange: this.handleFirstNameChange, value: this.state.firstname })
 	        ),
 	        _react2.default.createElement(
