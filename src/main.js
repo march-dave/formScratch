@@ -1,18 +1,19 @@
-import React from 'react'
+// import React from 'react'
 
-import { render } from 'react-dom'
-import { createStore } from 'redux'
-import { Provider } from 'react-redux'
+// import { render } from 'react-dom'
+// import { createStore } from 'redux'
+// import { Provider } from 'react-redux'
 
-import App from './App'
-import todoApp from './reducers/reducers'
+// import App from './app'
+// import todoApp from './reducers/reducers'
 
-let store = createStore(todoApp)
+// let store = createStore(todoApp)
 
-render(
-    <Pvoider store={store}>
-        <App />
-    </Provider>,
+// render(
 
-    app
-)
+//    <Provider store = {store}>
+//       <App />
+//    </Provider>,
+  
+//    content
+// )

@@ -1,30 +1,30 @@
-import React from 'react';
+// import React from 'react';
 
-class ContactDetails extends React.Component {
-  constructor(props) {
-    super(props);
+// class ContactDetails extends React.Component {
+//   constructor(props) {
+//     super(props);
 
-    this.state = {
-      address: "New York22"
-    }
+//     this.state = {
+//       address: "New York22"
+//     }
 
-    this.addressUpdate = this.addressUpdate.bind(this);
-  }
+//     this.addressUpdate = this.addressUpdate.bind(this);
+//   }
 
-  addressUpdate() {
-    this.setState({
-      address: "NJ"
-    })
-  }
+//   addressUpdate() {
+//     this.setState({
+//       address: "NJ"
+//     })
+//   }
 
-  render() {
-    return (
-      <div>
-        <h1>{this.state.address}: hhh</h1>
-        <button onClick={this.addressUpdate}>Address Click</button>
-      </div>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <div>
+//         <h1>{this.state.address}: hhh</h1>
+//         <button onClick={this.addressUpdate}>Address Click</button>
+//       </div>
+//     );
+//   }
+// }
 
-export default ContactDetails;
+// export default ContactDetails;

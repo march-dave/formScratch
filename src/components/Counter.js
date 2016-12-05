@@ -1,22 +1,20 @@
-import React, {PropTypes} from 'react';
-import Values from './Values';
-import Control from './Control';
+import React from 'react';
+import { connect } from 'react-redux';
 
-export default class Counter extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (<div>
-      <Values />
-      <Counter />
-    </div>);
-  }
+class Counter extends React.Component {
+    render() {
+        return (
+            <h1>VALUE: { this.props.value }</h1>
+        );
+    }
 }
 
-const propTypes = {
-};
+let mapStateToProps = (state) => {
+    return {
+        value: state.counter.value
+    };
+}
 
-const defaultProps = {
-};
+Counter = connect(mapStateToProps)(Counter);
+
+export default Counter;

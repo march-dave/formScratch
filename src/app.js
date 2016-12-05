@@ -5,7 +5,7 @@ import {addTodo} from './actions/actions'
 import AddTodo from './components/AddTodo'
 import TodoList from './components/TodoList'
 
-class App extends Components {
+class App extends Component {
     render() {
         const {dispatch, visibleTodos} = this.props
 
