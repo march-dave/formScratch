@@ -5,7 +5,7 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
 import App from './App'
-import todoApp from './reducres/reducers'
+import todoApp from './reducers/reducers'
 
 let store = createStore(todoApp)
 
