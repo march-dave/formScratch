@@ -2,6 +2,7 @@ import React from 'react';
 import Counter from './Counter';
 import Buttons from './Buttons';
 import Option from './Option';
+import Contact from './Contact';
 
 class App extends React.Component {
     render(){
@@ -10,6 +11,7 @@ class App extends React.Component {
                 <Counter/>
                 <Option/>
                 <Buttons/>
+                <Contact />
             </div>
         );
     }
