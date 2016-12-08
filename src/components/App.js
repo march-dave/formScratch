@@ -12,7 +12,9 @@ class App extends React.Component {
       conactName: 'Contact Me'
     }
     // this.onClickIncrement = this.onClickIncrement.bind(this);
+    var conatactName = "Dave Lee";
   }
+
 
   // onClickIncrement(e) {
   //   this.setState({
@@ -26,7 +28,7 @@ class App extends React.Component {
                 <Counter/>
                 <Option/>
                 <Buttons/>
-                <Contact myname={this.state.conactName}/>
+                <Contact myname={this.state.contactName} />
             </div>
         );
     }
