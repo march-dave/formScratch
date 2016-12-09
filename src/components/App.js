@@ -35,7 +35,7 @@ class App extends React.Component {
                 <Option/>
                 <Buttons/>
                 
-                <div style={ {width:300, height:600, background: 'red'} } >
+                <div style={ {width:300, height:600, background: 'green'} } >
                   <Map center={location} />
                 </div>
 
