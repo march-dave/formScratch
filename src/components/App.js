@@ -12,7 +12,7 @@ class App extends React.Component {
       conactName: 'Contact Me'
     }
     // this.onClickIncrement = this.onClickIncrement.bind(this);
-    var conatactName = "Dave Lee";
+    // const conatactName = "Dave Lee";
   }
 
 
