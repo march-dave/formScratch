@@ -6,14 +6,14 @@ class Map extends Component {
     constructor(props) {
       super(props);
     }
+    
+   // componentWillMount() {
+   //    console.log('Component WILL MOUNT!')
+   // }
 
-   componentWillMount() {
-      console.log('Component WILL MOUNT!')
-   }
-
-   componentDidMount() {
-      console.log('Component DID MOUNT!')
-   }
+   // componentDidMount() {
+   //    console.log('Component DID MOUNT!')
+   // }
 
   render() {
 
