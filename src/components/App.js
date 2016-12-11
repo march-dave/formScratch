@@ -13,15 +13,25 @@ class App extends React.Component {
 
     this.state = {
       conactName: 'Contact Me',
-      venues: []
+      venues: [],
+
+      search: "New York",
+      search2: ""
 
     }
     // this.onClickIncrement = this.onClickIncrement.bind(this);
     // const conatactName = "Dave Lee";
+
+    this.upDataSearch = this.upDataSearch.bind(this);
+  }
+
+  upDataSearch() {
+    this.setState( {
+      search2: "jdsfasdlkjsdf"
+    } )
   }
 
   componentDidMount() {
-
 
     // https://api.foursquare.com/v2/venues/search?ll=40.7,-74&oauth_token=0DWMXELULH1PCZUJVTPBZ5ISSSD30DIXN2WZGRNEU0KZW23G&v=20161209
 
@@ -35,8 +45,13 @@ class App extends React.Component {
       console.log(venues);
     })
 
-    console.log('App.js componentDidMount ');
+    // console.log('App.js componentDidMount ');
+
   }
+
+  // componentDidMount() {
+  //   console.log('componentDidMount')
+  // }
 
   // onClickIncrement(e) {
   //   this.setState({
@@ -51,21 +66,25 @@ class App extends React.Component {
         lng: -73.9884469
       }
 
-        return (
-            <div style={ {textAlign: 'center'} }>
-                <Counter/>
-                <Option/>
-                <Buttons/>
-                
-                <div style={ {width:300, height:600, background: 'green'} } >
-                  <Map center={location} />
-                </div>
-                <Places loc="aaa"/>
-            </div>
+      return (
+          <div style={ {textAlign: 'center'} }>
+              <Counter/>
+              <Option/>
+              <Buttons/>
+              
+              <Places loc="aaa" search={this.state.search} onSearch={this.upDataSearch}  />
+
+              <div style={ {width:300, height:600, background: 'green'} } >
+                <Map center={location} />
+              </div>
+
+              {this.state.search2}
+
+          </div>
 
 
 
-        );
+      );
     }
 
 }
