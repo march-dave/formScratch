@@ -75,13 +75,14 @@ class App extends React.Component {
               <Option/>
               <Buttons/>
               
-              <Places loc="aaa" search={this.state.search} onSearch={this.upDataSearch}  />
+              {this.state.search2}
+              
+              <Places loc="aaa" search={this.state.search} onSearch={this.upDataSearch} search2={this.state.search2} />
 
               <div style={ {width:300, height:600, background: 'green'} } >
                 <Map center={location} />
               </div>
 
-              {this.state.search2}
 
           </div>
 
