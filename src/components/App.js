@@ -25,7 +25,10 @@ class App extends React.Component {
     this.upDataSearch = this.upDataSearch.bind(this);
   }
 
-  upDataSearch() {
+  upDataSearch(e) {
+
+    console.log('upDataSearch', e.target.value)
+
     this.setState( {
       search2: "jdsfasdlkjsdf"
     } )
