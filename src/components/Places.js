@@ -12,7 +12,7 @@ class Places extends Component {
         <h3>Search:{this.props.search2}</h3>
 
       </div>);
-  }
+  } 
 }
 
 export default Places;

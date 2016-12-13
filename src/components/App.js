@@ -77,7 +77,7 @@ class App extends React.Component {
               
               {this.state.search2}
               
-              <Places loc="aaa" search={this.state.search} onSearch={this.upDataSearch} search2={this.state.search2} />
+              <Places loc="aaa" onSearch={this.upDataSearch} />
 
               <div style={ {width:300, height:600, background: 'green'} } >
                 <Map center={location} />
