@@ -19,8 +19,6 @@ class App extends React.Component {
       search2: ""
 
     }
-    // this.onClickIncrement = this.onClickIncrement.bind(this);
-    // const conatactName = "Dave Lee";
 
     this.upDataSearch = this.upDataSearch.bind(this);
   }
@@ -30,7 +28,7 @@ class App extends React.Component {
     console.log('upDataSearch', e.target.value)
 
     this.setState( {
-      search2: "jdsfasdlkjsdf"
+      search2: e.target.value
     } )
   }
 
@@ -48,48 +46,34 @@ class App extends React.Component {
       console.log(venues);
     })
 
-    // console.log('App.js componentDidMount ');
 
   }
 
-  // componentDidMount() {
-  //   console.log('componentDidMount')
-  // }
+  render(){
 
-  // onClickIncrement(e) {
-  //   this.setState({
-  //     conactName: e.target.value
-  //   })
-  // }
-
-    render(){
-
-      const location = {
-        lat: 40.7575285,
-        lng: -73.9884469
-      }
-
-      return (
-          <div style={ {textAlign: 'center'} }>
-              <Counter/>
-              <Option/>
-              <Buttons/>
-              
-              {this.state.search2}
-              
-              <Places loc="aaa" search={this.state.search} onSearch={this.upDataSearch} search2={this.state.search2} />
-
-              <div style={ {width:300, height:600, background: 'green'} } >
-                <Map center={location} />
-              </div>
-
-
-          </div>
-
-
-
-      );
+    const location = {
+      lat: 40.7575285,
+      lng: -73.9884469
     }
+
+    return (
+        <div style={ {textAlign: 'center'} }>
+            <Counter/>
+            <Option/>
+            <Buttons/>
+            
+            {this.state.search2}
+            
+            <Places loc="aaa" onSearch={this.upDataSearch} />
+
+            <div style={ {width:300, height:600, background: 'green'} } >
+              <Map center={location} />
+            </div>
+
+        </div>
+
+    );
+  }
 
 }
 

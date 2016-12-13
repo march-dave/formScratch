@@ -10,7 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/march-dave/formScratch.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "express",
+    "webpack",
+    "es2015",
+    "javascript"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {

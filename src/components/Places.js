@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import ReactDOM from 'react-dom';
 
 class Places extends Component {
   render() {
@@ -12,7 +11,7 @@ class Places extends Component {
         <h3>Search:{this.props.search2}</h3>
 
       </div>);
-  }
+  } 
 }
 
 export default Places;
