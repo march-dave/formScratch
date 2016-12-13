@@ -49,7 +49,6 @@ class App extends React.Component {
 
   }
 
-<<<<<<< HEAD
   render(){
 
     const location = {
@@ -75,43 +74,32 @@ class App extends React.Component {
 
     );
   }
-=======
-  // componentDidMount() {
-  //   console.log('componentDidMount')
-  // }
 
-  // onClickIncrement(e) {
-  //   this.setState({
-  //     conactName: e.target.value
-  //   })
-  // }
+  render(){
 
-    render(){
-
-      const location = {
-        lat: 40.7575285,
-        lng: -73.9884469
-      }
-
-      return (
-          <div style={ {textAlign: 'center'} }>
-              <Counter/>
-              <Option/>
-              <Buttons/>
-              
-              {this.state.search2}
-              
-              <Places loc="aaa" onSearch={this.upDataSearch} />
-
-              <div style={ {width:300, height:600, background: 'green'} } >
-                <Map center={location} />
-              </div>
-
-          </div>
-
-      );
+    const location = {
+      lat: 40.7575285,
+      lng: -73.9884469
     }
->>>>>>> 8e99481427e5a2f165e13b870462bfff28b096c9
+
+    return (
+        <div style={ {textAlign: 'center'} }>
+            <Counter/>
+            <Option/>
+            <Buttons/>
+            
+            {this.state.search2}
+            
+            <Places loc="aaa" onSearch={this.upDataSearch} />
+
+            <div style={ {width:300, height:600, background: 'green'} } >
+              <Map center={location} />
+            </div>
+
+        </div>
+
+    );
+  }
 
 }
 
