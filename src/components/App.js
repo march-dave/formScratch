@@ -30,7 +30,7 @@ class App extends React.Component {
     console.log('upDataSearch', e.target.value)
 
     this.setState( {
-      search2: "jdsfasdlkjsdf"
+      search2: e.target.value
     } )
   }
 
@@ -83,10 +83,7 @@ class App extends React.Component {
                 <Map center={location} />
               </div>
 
-
           </div>
-
-
 
       );
     }
