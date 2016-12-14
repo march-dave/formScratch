@@ -60,14 +60,14 @@ class App extends React.Component {
       lng: -73.9884469
     }
 
-    const markers = [
-      {
-        location: {
-          lat: 40.7575285,
-          lng: -73.9884469
-        }
-      }
-    ]
+    // const markers = [
+    //   {
+    //     location: {
+    //       lat: 40.7575285,
+    //       lng: -73.9884469
+    //     }
+    //   }
+    // ]
 
     return (
         <div style={ {textAlign: 'center'} }>
@@ -80,7 +80,7 @@ class App extends React.Component {
             <Places loc="aaa" onSearch={this.upDataSearch} venues={this.state.venues} />
 
             <div style={ {width:300, height:600, background: 'green'} } >
-              <Map center={location} markers={markers} />
+              <Map center={location} markers={this.state.venues} />
             </div>
 
         </div>
