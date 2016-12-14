@@ -31,7 +31,9 @@ module.exports = {
           query: {
               presets: ['es2015', 'stage-0', 'react']
           }
-        }
+        },
+        // Bootstrap 3 jquery requirement
+        { test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery' }
       ]
     }
 }

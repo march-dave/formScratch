@@ -9,6 +9,7 @@ class Places extends Component {
          />
 
         <h3>Search:{this.props.search2}</h3>
+        <button className="btn">Click</button>
 
       </div>);
   } 
