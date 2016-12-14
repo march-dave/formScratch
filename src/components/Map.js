@@ -28,7 +28,7 @@ class Map extends Component {
                 }
             }
 
-      return <Marker key={venue.id} {...marker} />
+      return <Marker key={i} {...marker} />
     })
 
     return(
