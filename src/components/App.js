@@ -44,6 +44,10 @@ class App extends React.Component {
     .end((err, res) => {
       const venues = res.body.response.venues;
       console.log(venues);
+      this.setState({
+        venues: venues
+      })
+
     })
 
 
@@ -73,7 +77,7 @@ class App extends React.Component {
             
             {this.state.search2}
             
-            <Places loc="aaa" onSearch={this.upDataSearch} venus={this.state.venus} />
+            <Places loc="aaa" onSearch={this.upDataSearch} venues={this.state.venues} />
 
             <div style={ {width:300, height:600, background: 'green'} } >
               <Map center={location} markers={markers} />
