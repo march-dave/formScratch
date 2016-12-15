@@ -6,7 +6,6 @@ import Map from './Map';
 import Places from './Places';
 
 // import style from '../css/style.css'
-// yyujinn@icloud.com
 
 import superagent from 'superagent';
 
@@ -39,7 +38,7 @@ class App extends React.Component {
 
     // https://api.foursquare.com/v2/venues/search?ll=40.7,-74&v=20161209
 
-    const url = 'https://api.foursquare.com/v2/venues/search?ll=40.7,-74&oauth_token=0DWMXELULH1PCZUJVTPBZ5ISSSD30DIXN2WZGRNEU0KZW23G&v=20161209'
+    const url = 'https://api.foursquare.com/v2/venues/search?ll=40.7575285,-73.9884469&oauth_token=0DWMXELULH1PCZUJVTPBZ5ISSSD30DIXN2WZGRNEU0KZW23G&v=20161209'
     superagent
     .get(url)
     .query(null)
