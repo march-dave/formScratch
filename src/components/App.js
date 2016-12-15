@@ -6,6 +6,7 @@ import Map from './Map';
 import Places from './Places';
 
 // import style from '../css/style.css'
+// yyujinn@icloud.com
 
 import superagent from 'superagent';
 
