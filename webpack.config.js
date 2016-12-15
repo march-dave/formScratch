@@ -27,13 +27,15 @@ module.exports = {
         {
           test: /\.jsx?$/,
           exclude: /(node_modules)/,
-          loader: 'babel',
+          // loader: 'babel',
+          loaders; ['react-hot', 'babel'],
           query: {
               presets: ['es2015', 'stage-0', 'react']
-          }
-        },
+        } 
+        {test: /(\.css)$/, loaders: ['style', 'css']},
         // Bootstrap 3 jquery requirement
         { test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery' }
+        },
       ]
     }
 }

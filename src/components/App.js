@@ -5,6 +5,8 @@ import Option from './Option';
 import Map from './Map';
 import Places from './Places';
 
+// import style from '../css/style.css'
+
 import superagent from 'superagent';
 
 class App extends React.Component {
@@ -34,7 +36,7 @@ class App extends React.Component {
 
   componentDidMount() {
 
-    // https://api.foursquare.com/v2/venues/search?ll=40.7,-74&oauth_token=0DWMXELULH1PCZUJVTPBZ5ISSSD30DIXN2WZGRNEU0KZW23G&v=20161209
+    // https://api.foursquare.com/v2/venues/search?ll=40.7,-74&v=20161209
 
     const url = 'https://api.foursquare.com/v2/venues/search?ll=40.7,-74&oauth_token=0DWMXELULH1PCZUJVTPBZ5ISSSD30DIXN2WZGRNEU0KZW23G&v=20161209'
     superagent
@@ -44,6 +46,7 @@ class App extends React.Component {
     .end((err, res) => {
       const venues = res.body.response.venues;
       console.log(venues);
+
       this.setState({
         venues: venues
       })
@@ -70,16 +73,16 @@ class App extends React.Component {
     // ]
 
     return (
-        <div style={ {textAlign: 'center'} }>
-            <Counter/>
-            <Option/>
-            <Buttons/>
+        <div style={ {textAlign: 'center'} } className="container">
+            <Counter />
+            <Option />
+            <Buttons />
             
             {this.state.search2}
             
             <Places loc="aaa" onSearch={this.upDataSearch} venues={this.state.venues} />
 
-            <div style={ {width:300, height:600, background: 'green'} } >
+            <div style={ {width:450, height:600, background: 'green'} } >
               <Map center={location} markers={this.state.venues} />
             </div>
 

@@ -28,6 +28,8 @@ class Map extends Component {
                 }
             }
 
+            // https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_,suffix.png"
+
       return <Marker key={i} {...marker} />
     })
 
