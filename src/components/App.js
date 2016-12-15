@@ -52,8 +52,6 @@ class App extends React.Component {
       })
 
     })
-
-
   }
 
   render(){
@@ -82,7 +80,7 @@ class App extends React.Component {
             
             <Places loc="aaa" onSearch={this.upDataSearch} venues={this.state.venues} />
 
-            <div style={ {width:450, height:600, background: 'green'} } >
+            <div style={ {width:600, height:450, background: 'green'} } >
               <Map center={location} markers={this.state.venues} />
             </div>
 
