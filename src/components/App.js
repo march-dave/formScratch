@@ -36,8 +36,6 @@ class App extends React.Component {
 
   componentDidMount() {
 
-    // https://api.foursquare.com/v2/venues/search?ll=40.7,-74&v=20161209
-
     const url = 'https://api.foursquare.com/v2/venues/search?ll=40.7575285,-73.9884469&oauth_token=0DWMXELULH1PCZUJVTPBZ5ISSSD30DIXN2WZGRNEU0KZW23G&v=20161209'
     superagent
     .get(url)
@@ -60,15 +58,6 @@ class App extends React.Component {
       lat: 40.7575285,
       lng: -73.9884469
     }
-
-    // const markers = [
-    //   {
-    //     location: {
-    //       lat: 40.7575285,
-    //       lng: -73.9884469
-    //     }
-    //   }
-    // ]
 
     return (
         <div style={ {textAlign: 'center'} } className="container">

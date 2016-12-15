@@ -6,14 +6,6 @@ class Map extends Component {
     constructor(props) {
       super(props);
     }
-    
-   // componentWillMount() {
-   //    console.log('Component WILL MOUNT!')
-   // }
-
-   // componentDidMount() {
-   //    console.log('Component DID MOUNT!')
-   // }
 
   render() {
 
@@ -27,8 +19,6 @@ class Map extends Component {
                     lng: venue.location.lng
                 }
             }
-
-            // https://ss3.4sqi.net/img/categories_v2/parks_outdoors/park_,suffix.png"
 
       return <Marker key={i} {...marker} />
     })
