@@ -10,7 +10,6 @@ class Option extends React.Component {
             diff: '1'
         }
 
-
         this.onChangeDiff = this.onChangeDiff.bind(this); 
     }
     

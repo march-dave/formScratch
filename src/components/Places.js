@@ -3,6 +3,10 @@ import React, {Component} from 'react';
 class Places extends Component {
   render() {
 
+
+    // let { tenants } = this.props
+    // let display = tenants.length && tenants.map(tenant => <Tenant key={tenant._id} tenant={tenant} />);
+    
     const list = this.props.venues.map(
       (venue, i) => {
           return (
