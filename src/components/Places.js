@@ -15,6 +15,20 @@ class Places extends Component {
       }
     )
 
+    <table className="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody className="text-left">
+          
+        </tbody>
+      </table>
+
     return(
       <div>
 
