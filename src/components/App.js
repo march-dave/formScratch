@@ -64,9 +64,9 @@ class App extends React.Component {
             <Counter />
             <Option />
             <Buttons />
-            
+
             {this.state.search2}
-            
+
             <Places loc="aaa" onSearch={this.upDataSearch} venues={this.state.venues} />
 
             <div style={ {width:600, height:450, background: 'green'} } >
