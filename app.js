@@ -7,9 +7,6 @@ import logger from 'morgan';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 
-// import graphqlHTTP from 'express-graphql';
-
-
 
 import mongoose from 'mongoose';
 
@@ -35,10 +32,10 @@ if (process.env.NODE_ENV !== 'production') {
   }))
 }
 
-// app.use(logger('dev'));
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(cookieParser());
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 //
 // app.use('/api', api);
 //
