@@ -39,11 +39,11 @@ app.use(cookieParser());
 //
 // app.use('/api', api);
 //
-// app.use('/graphql', graphqlHTTP ({
-//   schema:schema,
-//   pretty: true,
-//   graphql: true
-// }))
+app.use('/graphql', graphqlHTTP ({
+  schema:schema,
+  pretty: true,
+  graphql: true
+}))
 //
 //
 // app.get('*', function(req, res) {
