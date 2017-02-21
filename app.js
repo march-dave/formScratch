@@ -7,7 +7,6 @@ import logger from 'morgan';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 
-
 import mongoose from 'mongoose';
 
 const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/property-manager'
